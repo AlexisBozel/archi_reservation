@@ -1,9 +1,7 @@
 # Utiliser une image de node.js comme base
 FROM node:21-alpine3.18
 
-# Créer un répertoire de travail dans le conteneur
-WORKDIR /app
-
+WORKDIR app
 # Copier les fichiers de votre application dans le conteneur
 COPY . .
 
@@ -14,4 +12,4 @@ RUN npm install
 EXPOSE 3000
 
 # Définir la commande de démarrage de votre application
-CMD ["node", "index.js"]
+CMD ["npm", "start"]
