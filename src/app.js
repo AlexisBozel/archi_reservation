@@ -1,6 +1,5 @@
 const express = require("express")
 const requestRoute = require("./routes/requestRoute")
-const notificationRoute = require("./routes/notificationRoute")
 const port = process.env.PORT || 5000
 const cors = require('cors');
 
