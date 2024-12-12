@@ -1,32 +1,32 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deployment-archi-reservation
+  name: deployment-js-reservation-ms
   labels:
-    app: deployment-archi-reservation
+    app: deployment-js-reservation-ms
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: deployment-archi-reservation
+      app: deployment-js-reservation-ms
   template:
     metadata:
       labels:
-        app: deployment-archi-reservation
+        app: deployment-js-reservation-ms
     spec:
       containers:
-      - name: archi-reservation
-        image: totank4545/archi_reservation:v1
+      - name: js-reservation-ms
+        image: totank4545/js-reservation-ms:v1
         ports:
         - containerPort: 3000
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: service-archi-reservation
+  name: service-js-reservation-ms
 spec:
   selector:
-    app: service-archi-reservation
+    app: service-js-reservation-ms
   ports:
     - protocol: TCP
       port: 3000
