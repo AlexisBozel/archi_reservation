@@ -5,10 +5,10 @@ const app = express();
 
 // Configuration de la base de données MySQL
 const db = mysql.createConnection({
-  host: '172.232.48.55',
-  port:3306,
-  user: 'alexis',
-  password: 'alexisGrosCul123',
+  host: 'my-release-mysql.default.svc.cluster.local',
+  port:3307,
+  user: 'root',
+  password: 'my-root-password',
   database: 'js-interaction-service'
 });
 

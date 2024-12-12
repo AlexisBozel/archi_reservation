@@ -13,7 +13,6 @@ app.get("/", (req, res) => {
 })
 
 app.use("/api/request", requestRoute)
-app.use("/api/notification", notificationRoute)
 
 app.options('*', cors());
 app.use((req, res, next) => {
