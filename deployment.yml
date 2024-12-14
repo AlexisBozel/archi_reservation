@@ -19,6 +19,7 @@ spec:
         image: totank4545/js-reservation-ms:v1
         ports:
         - containerPort: 3000
+        imagePullPolicy : Always
 ---
 apiVersion: v1
 kind: Service

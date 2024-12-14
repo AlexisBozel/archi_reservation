@@ -8,7 +8,7 @@ const db = mysql.createConnection({
   host: 'my-release-mysql.default.svc.cluster.local',
   port:3307,
   user: 'root',
-  password: 'my-root-password',
+  password: 'root',
   database: 'js-interaction-service'
 });
 
